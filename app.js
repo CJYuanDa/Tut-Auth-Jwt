@@ -9,6 +9,7 @@ const PORT = 3000 || process.env.PORT;
 
 // middleware
 app.use(express.static('public'));
+app.use(express.json());
 
 // set view engine
 app.set('view engine', 'ejs');
